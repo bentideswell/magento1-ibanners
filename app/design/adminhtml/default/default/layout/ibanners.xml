@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<layout>
+	
+	<ibanners_default>
+		<reference name="head">
+			<action method="addCss"><css>ibanners.css</css></action>
+		</reference>
+		<reference name="before_body_end">
+			<block type="core/template" name="ibanners.getCode" template="ibanners/getcode.phtml" />
+		</reference>	
+	</ibanners_default>
+	
+	<!--
+	/**
+	 * Splash Dashboard
+	 */
+	 -->
+	<adminhtml_ibanners_index>
+		<reference name="content">
+			<block type="core/text" name="ibanners.dashboard.title">
+				<action method="setText">
+					<text><![CDATA[<div class="content-header"><h3>iBanners</h3></div>]]></text>
+				</action>
+			</block>
+			<block type="ibanners/adminhtml_dashboard" name="ibanners.dashboard" />
+			<block type="core/text" name="ibanners.tabs.content">
+				<action method="setText">
+					<text><![CDATA[
+						<div id="ibanners_tab_content"></div>
+						<style type="text/css">#ibanners_tab_content .content-header { display: none; }</style>
+						<script type="text/javascript">
+							$('page:main-container').select('.content-header').first().insert(
+								new Element('div', {'class': 'form-buttons'}).update('Speed up Magento with <a href="http://fishpig.co.uk/magento/extensions/bolt-full-page-cache/?utm_source=Fishpig_iBanners&utm_medium=Speed%20Up%20Link&utm_term=Fishpig_Bolt&utm_campaign=Extend" target="_blank">Bolt<\/a>.')
+							);
+						</script>
+					]]></text>
+				</action>
+			</block>
+		</reference>
+	</adminhtml_ibanners_index>
+
+	<adminhtml_ibanners_group_edit>
+		<update handle="editor" />
+		<update handle="ibanners_default" />
+		<reference name="left">
+			<block type="ibanners/adminhtml_group_edit_tabs" name="group.tabs" />
+		</reference>
+		<reference name="content">
+			<block type="ibanners/adminhtml_group_edit" name="groups" />
+		</reference>
+	</adminhtml_ibanners_group_edit>
+	
+	<adminhtml_ibanners_banner_edit>
+		<update handle="editor" />
+		<update handle="ibanners_default" />
+		<reference name="left">
+			<block type="ibanners/adminhtml_banner_edit_tabs" name="banners.tabs" />
+		</reference>
+		<reference name="content">
+			<block type="ibanners/adminhtml_banner_edit" name="banners" />
+		</reference>
+	</adminhtml_ibanners_banner_edit>
+</layout>

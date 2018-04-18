@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Fishpig_iBanners>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Fishpig_iBanners>
+		<Fishpig_iBanners_FPAdmin>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Fishpig_iBanners_FPAdmin>
+	</modules>
+</config>

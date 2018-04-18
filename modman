@@ -1,0 +1,10 @@
+app/code/community/Fishpig/IBanners app/code/community/Fishpig/IBanners
+app/design/adminhtml/default/default/layout/ibanners.xml app/design/adminhtml/default/default/layout/ibanners.xml
+app/design/adminhtml/default/default/template/ibanners app/design/adminhtml/default/default/template/ibanners
+app/design/frontend/base/default/layout/ibanners.xml app/design/frontend/base/default/layout/ibanners.xml
+app/design/frontend/base/default/template/ibanners app/design/frontend/base/default/template/ibanners
+app/etc/modules/Fishpig_iBanners.xml app/etc/modules/Fishpig_iBanners.xml
+js/fishpig/carousel.min.js js/fishpig/carousel.min.js
+skin/adminhtml/default/default/ibanners.css skin/adminhtml/default/default/ibanners.css
+skin/frontend/base/default/css/ibanners.css skin/frontend/base/default/css/ibanners.css
+skin/frontend/base/default/images/ibanners skin/frontend/base/default/images/ibanners
